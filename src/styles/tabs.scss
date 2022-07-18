@@ -1,0 +1,32 @@
+.tabs {
+  &__list {
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+  }
+
+  &__list-button {
+    padding: 0.5rem 0.75rem;
+    border: transparent;
+    background-color: white;
+  }
+  
+  &__list-button--active {
+    background-color: white;
+    border: solid #ccc;
+    border-width: 1px 1px 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      bottom: -1px;
+      left: 0%;
+      right: 0%;
+      background-color: #fff;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+  }
+}
